@@ -262,7 +262,7 @@ public class OkHttpClientManager
             {
                 try
                 {
-                    final String string = response.body().string();
+                    final String string = response.body().string().trim();
                     if (resCallBack.mType == String.class)
                     {
                         sendSuccessResultCallback(string, resCallBack);
